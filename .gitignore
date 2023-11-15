@@ -1,3 +1,4 @@
-server.c
-client.c
 .vscode
+client
+server
+sungka
