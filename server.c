@@ -66,7 +66,7 @@ int main(int argc, char *argv[]){
 
     // Accept new connection
     client_size = sizeof(client_addr);
-    client_sock = accept(server_sock, (struct sockaddr *) &client_addr, &client_size);
+    client_sock = accept(server_sock, (struct sockaddr *) &client_addr, (socklen_t *) &client_size);
     if (client_sock < 0) 
         die_with_error("Error: accept() Failed.");
 
