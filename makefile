@@ -10,5 +10,8 @@ client: client.c
 server: server.c
 	$(CC) $(CFLAGS) server.c -o server
 
+sungka: sungka.c
+	$(CC) $(CFLAGS) sungka.c -o sungka
+	
 clean:
 	$(RM) server && $(RM) client
